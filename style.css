@@ -13,23 +13,146 @@ body {
     overflow-x: hidden;
 }
 
-header {
+/* header */
+
+.header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 100;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover,
+.header li a.active {
+    background-color: #fff;
+    color: #254F69;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    pointer-events: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+.header li {
+    float: left;
+}
+.header li a {
+    padding: 20px 30px;
+}
+.header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+}
+.header .menu-icon {
+    display: none;
+}
 }
 
 .scrolled {
     background-color: #254F69 !important;
     transition: background-color 200ms linear;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 }
 
+/*
 .logo {
     font-size: 2em;
     color: #fff;
@@ -51,14 +174,64 @@ header {
     background-color: #fff;
     color: #254F69;
 }
+*/
 
-.parallax {
-    position: relative;
-    display: flex;
+.parallax, .parallax_layer {
+	height: 1000px;
     justify-content: center;
     align-items: center;
-    height: 110vh;
-    background-color: rgb(19, 28, 52);
+}
+
+.parallax_layer {
+    background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+#background {
+    background-image: url(images/background.png);
+}
+
+#seattle {
+background-image: url(images/seattle.png);
+}
+
+#clouds-right {
+background-image: url(images/clouds-right.png);
+}
+
+#moon {
+background-image: url(images/moon.png);
+}
+
+#clouds-left {
+background-image: url(images/clouds-left.png);
+}
+
+#mountain5 {
+background-image: url(images/mountain5.png);
+}
+
+#mountain4 {
+background-image: url(images/mountain4.png);
+}
+
+#mountain3 {
+background-image: url(images/mountain3.png);
+}
+
+#mountain2 {
+background-image: url(images/mountain2.png);
+}
+
+#mountain1 {
+background-image: url(images/mountain1.png);
+}
+
+#trees {
+background-image: url(images/trees.png);
 }
 
 #text {
@@ -66,19 +239,25 @@ header {
     font-size: 5em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    width: 100%;
+    text-align: center;
 }
 
-.parallax img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
+@media(max-width:648px) {
+    .parallax img{
+        left: -50%;
+    }
+}
+
+@media(max-width:648px) {
+    .parallax img{
+        left: -50%;
+    }
 }
 
 .about {
     position: relative;
-    background-color: #254F69;
+    background: #254F69;
     padding: 100px;
 }
 

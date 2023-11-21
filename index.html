@@ -11,29 +11,31 @@
 
 <body>
     
-    <header id="nav">
-        <nav class="navbar">
-            <h2 class="logo navbar-item">Dylan Ables</h2>
-            <a href="#" class="navbar-item active">Home</a>
-            <a href="#About" class="navbar-item">About</a>
-            <a href="#Projects" class="navbar-item">Projects</a>
-            <a href="#Contact" class="navbar-item">Contact</a>
-        </nav>
+    <header class="header" id="nav">
+        <a class="logo navbar-item">Dylan Ables</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
-    <section class="parallax">
-        <!-- <img src="images/background.png" id="background" /> -->
-        <img src="images/seattle.png" id="seattle" />
-        <img src="images/clouds-right.png" id="clouds-right" />
-        <img src="images/moon.png" id="mountain6" />
-        <img src="images/clouds-left.png" id="clouds-left" />
-        <img src="images/mountain5.png" id="mountain5" />
-        <img src="images/mountain4.png" id="mountain4" />
-        <img src="images/mountain3.png" id="mountain3" />
-        <img src="images/mountain2.png" id="mountain2" />
+    <section class="parallax" id="parallax">
+        <div class="parallax_layer" id="background"></div>
+        <div class="parallax_layer" id="seattle"></div>
+        <div class="parallax_layer" id="clouds-right"></div>
+        <div class="parallax_layer" id="moon"></div>
+        <div class="parallax_layer" id="clouds-left"></div>
+        <div class="parallax_layer" id="mountain5"></div>
+        <div class="parallax_layer" id="mountain4"></div>
+        <div class="parallax_layer" id="mountain3"></div>
+        <div class="parallax_layer" id="mountain2"></div>
         <h2 id="text">Hi, I'm Dylan.</h2>
-        <img src="images/mountain1.png" id="mountain1" />
-        <img src="images/trees.png" id="trees" />
+        <div class="parallax_layer" id="mountain1"></div>
+        <div class="parallax_layer" id="trees"></div>
     </section>
 
     <section class="about" id="about">
