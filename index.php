@@ -87,61 +87,35 @@
                 </div>
             </div>
             <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Placeholder for project description here...</p>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-                </button>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    </span>
-                </button>
+                <h3>Portfolio</h3>
+                <div class="project-image-container">
+                    <img src="images/portfolio.png" alt="DylanAbles.com" class="project-image" />
+                    <div class="project-image hidden">
+                        HTML<br/>
+                        CSS<br/>
+                        JavaScript<br/>
+                        PHP<br/>
+                    </div>
+                </div>
+                <p>This is my personal portfolio page which features parallax scrolling, responsive (mobile-friendly) elements, and a PHP contact form.</p>
+                <div class="project-buttons">
+                    <a href="https://dylanables.com" class="project-link" target="_blank">
+                        <button class="pushable">
+                            <span class="front">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/dylanables/portfolio" class="project-link" target="_blank">
+                        <button class="pushable">
+                            <span class="front">
+                                <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
+                            </span>
+                        </button>
+                    </a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Placeholder for project description here...</p>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-                </button>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    </span>
-                </button>
-            </div>
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Placeholder for project description here...</p>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-                </button>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    </span>
-                </button>
-            </div>
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Placeholder for project description here...</p>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </span>
-                </button>
-                <button class="pushable">
-                    <span class="front">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                    </span>
-                </button>
-            </div>
+            
         </div>
     </section>
 
