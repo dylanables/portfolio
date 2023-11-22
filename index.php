@@ -67,7 +67,7 @@
                         MongoDB<br/>
                     </div>
                 </div>
-                <p>FindPaddle.com offers multiple different tools for find the right pickleball paddle for you. 
+                <p>FindPaddle.com offers multiple different tools to find the right pickleball paddle for you. 
                 This project required advanced data filtering, a unique recommendation algorithm, and a similiarity score algorithm.</p>
                 <div class="project-buttons">
                     <a href="https://findpaddle.com" class="project-link" target="_blank">

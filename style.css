@@ -189,6 +189,7 @@ body {
 	background-size: cover;
 	width: 100%;
 	position: absolute;
+    overflow-x: hidden;
 }
 
 #seattle {
@@ -405,4 +406,16 @@ background-image: url(images/trees.png);
     text-align: center;
     padding: 30px;
     color: #254F69;
+}
+
+@media(max-width:728px) {
+    .about {
+        padding: 20px;
+    }
+    .projects {
+        padding: 20px;
+    }
+    .contact {
+        padding: 20px;
+    }
 }
