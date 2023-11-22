@@ -186,8 +186,7 @@ body {
 
 .parallax_layer {
     background-position: bottom center;
-	background-size: auto 1038px;
-	background-repeat: repeat-x;
+	background-size: cover;
 	width: 100%;
 	position: absolute;
 }
@@ -258,6 +257,7 @@ background-image: url(images/trees.png);
     position: relative;
     background: #254F69;
     padding: 100px;
+    text-align: justify;
 }
 
 .about h2 {

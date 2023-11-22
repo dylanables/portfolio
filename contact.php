@@ -1,9 +1,10 @@
 <?php
+
 if (isset($_POST['email'])) {
 
     // REPLACE THIS 2 LINES AS YOU DESIRE
     $email_to = "hello@dylanables.com";
-    $email_subject = "You've got a new contact formvsubmission";
+    $email_subject = "You've got a new contact form submission";
 
     function problem($error)
     {
@@ -18,7 +19,7 @@ if (isset($_POST['email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['message'])
     ) {
-        problem('Oh looks like there is some problem with your form data.');
+        problem('Oh looks like there is something missing.');
     }
 
     $email = $_POST['email']; // required
