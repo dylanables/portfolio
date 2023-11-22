@@ -5,15 +5,18 @@ let cloudsRight = document.getElementById('clouds-right');
 let nav = document.getElementById('nav');
 let parallax = document.getElementById('parallax');
 let about = document.getElementById('about');
+let projects = document.getElementById('projects');
+let contact = document.getElementById('contact');
 
-const [red, green, blue] = [19, 28, 52]
-const bg = document.querySelector('.parallax')
+let aboutLink = document.getElementById('about-link');
+let projectsLink = document.getElementById('projects-link');
+let contactLink = document.getElementById('contact-link');
+
+const [red, green, blue] = [19, 28, 52];
+const bg = document.querySelector('.parallax');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-
-    console.log("parallax height", parallax.offsetHeight);
-    console.log("value Y", value);
 
     text.style.marginTop = Math.min(value * 1.5, about.offsetTop) + 'px';
     moon.style.top = Math.min(value * 2.5, about.offsetTop) + 'px';
@@ -26,8 +29,26 @@ window.addEventListener('scroll', () => {
 
     if (value >= (about.offsetTop - nav.offsetHeight) ) {
         nav.classList.add("scrolled");
-    } 
-    else {
+    } else {
         nav.classList.remove("scrolled");
     }
+
+    if (value >= (about.offsetTop - nav.offsetHeight) && value < (projects.offsetTop - nav.offsetHeight)) {
+        aboutLink.classList.add("active");
+        projectsLink.classList.remove("active");
+        contactLink.classList.remove("active");
+    } else if (value >= (projects.offsetTop - nav.offsetHeight) && value < (contact.offsetTop - nav.offsetHeight)) {
+        projectsLink.classList.add("active");
+        aboutLink.classList.remove("active");
+        contactLink.classList.remove("active");
+    } else if (value >= (contact.offsetTop - nav.offsetHeight) && value < (footer.offsetTop - nav.offsetHeight)) {
+        contactLink.classList.add("active");
+        aboutLink.classList.remove("active");
+        projectsLink.classList.remove("active");
+    } else {
+        aboutLink.classList.remove("active");
+        projectsLink.classList.remove("active");
+        contactLink.classList.remove("active");
+    }
+
 })

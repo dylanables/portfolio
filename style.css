@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,7 +51,6 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    pointer-events: none;
 }
 
 /* menu */
@@ -176,10 +176,12 @@ body {
 }
 */
 
+.parallax {
+    background: rgb(19, 28, 52);
+}
+
 .parallax, .parallax_layer {
 	height: 1000px;
-    justify-content: center;
-    align-items: center;
 }
 
 .parallax_layer {
@@ -188,10 +190,6 @@ body {
 	background-repeat: repeat-x;
 	width: 100%;
 	position: absolute;
-}
-
-#background {
-    background-image: url(images/background.png);
 }
 
 #seattle {
@@ -238,9 +236,10 @@ background-image: url(images/trees.png);
     position: absolute;
     font-size: 5em;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    text-shadow: 5px 5px 10px rgba(0,0,0,.25);
     width: 100%;
     text-align: center;
+    top: 40%;
 }
 
 @media(max-width:648px) {
@@ -290,17 +289,72 @@ background-image: url(images/trees.png);
 
 .projects-container {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-top: 50px ;
 }
 
 .project-card {
     height: 500px;
-    width: 3000px;
+    width: 350px;
     background-color: #fff;
     margin-right: 50px;
+    margin-bottom: 50px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.2);
     border-radius: 5px;
+    padding: 25px;
+    text-align: justify;
+    position: relative;
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.hidden {
+    z-index: 2;
+    background-color: #000;
+    color: #fff;
+    opacity: 50%;
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.project-image-container:hover .hidden {
+   display: block !important; 
+}
+
+.project-card p {
+    position: absolute;
+    top: 260px;
+    width: 300px;
+}
+
+.project-image {
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    position: absolute;
+}
+
+.project-buttons {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+@media(max-width:728px) {
+    .project-card {
+        width: 500px;
+        margin-right: 0;
+    }
 }
 
 .contact {
@@ -308,5 +362,47 @@ background-image: url(images/trees.png);
     background-color: #fff;
     padding: 100px;
     color: #254F69;
+}
 
+.contact h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact #email {
+    height: 40px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.contact #message {
+    width: 100%;
+}
+
+.pushable {
+    background: hsl(198, 48%, 13%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+.front {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background:hsl(203, 48%, 28%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+.footer p {
+    text-align: center;
+    padding: 30px;
+    color: #254F69;
 }
