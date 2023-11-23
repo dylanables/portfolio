@@ -59,7 +59,7 @@
                 <h3>Find Paddle</h3>
                 <div class="project-image-container">
                     <img src="images/findpaddle.jpeg" alt="FindPaddle.com" class="project-image" />
-                    <div class="project-image hidden">
+                    <div class="hidden">
                         React.js<br/>
                         CSS<br/>
                         Node.js<br/>
@@ -90,7 +90,7 @@
                 <h3>Portfolio</h3>
                 <div class="project-image-container">
                     <img src="images/portfolio.png" alt="DylanAbles.com" class="project-image" />
-                    <div class="project-image hidden">
+                    <div class=" hidden">
                         HTML<br/>
                         CSS<br/>
                         JavaScript<br/>

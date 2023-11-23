@@ -296,56 +296,55 @@ background-image: url(images/trees.png);
 }
 
 .project-card {
-    height: 500px;
-    width: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+    padding: 25px;
+    text-align: justify;
     background-color: #fff;
     margin-right: 50px;
     margin-bottom: 50px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.2);
     border-radius: 5px;
     padding: 25px;
-    text-align: justify;
-    position: relative;
 }
 
 .project-image-container {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
     position: relative;
 }
 
-.hidden {
-    z-index: 2;
-    background-color: #000;
-    color: #fff;
-    opacity: 50%;
-    display: none;
-    text-align: center;
-    padding: 20px;
+.project-image-container:hover {
+    .hidden {
+        z-index: 2;
+        background-color: #000;
+        color: #fff;
+        opacity: 75%;
+        text-align: center;
+        padding: 20px;
+    }
 }
 
-.project-image-container:hover .hidden {
-   display: block !important; 
+.project-image-container .project-image {
+    z-index: 1;
 }
 
-.project-card p {
-    position: absolute;
-    top: 260px;
-    width: 300px;
-}
-
-.project-image {
-    height: 200px;
-    width: 300px;
-    align-items: center;
+.project-image-container img,
+.project-image-container div {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     position: absolute;
 }
 
 .project-buttons {
-    display: inline-block;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 25px;
+    align-items: center
 }
 
 .project-link {
