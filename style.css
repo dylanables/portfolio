@@ -381,6 +381,16 @@ background-image: url(images/trees.png);
     width: 100%;
 }
 
+.sent-msg {
+    color: #05C811;
+    font-weight: bold;
+}
+
+.error-msg {
+    color: #FF2700;
+    font-weight: bold;
+}
+
 .pushable {
     background: hsl(198, 48%, 13%);
     border-radius: 12px;

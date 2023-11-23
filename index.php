@@ -131,9 +131,7 @@
 
             function problem($error)
             {
-                echo "Oh looks like there is some problem with your form data: <br><br>";
-                echo $error . "<br><br>";
-                echo "Please fix those to proceed.<br><br>";
+                echo "<span class='error-msg'>"$error . "</span><br/><br/>";
                 die();
             }
 
@@ -152,14 +150,14 @@
             $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
             if (!preg_match($email_exp, $email)) {
-                $error_message .= 'Email address does not seem valid.<br>';
+                $error_message .= 'Email address is not valid, please re-try with another email.<br/>';
             }
 
             $string_exp = "/^[A-Za-z .'-]+$/";
 
 
             if (strlen($message) < 2) {
-                $error_message .= 'Message should not be less than 2 characters<br>';
+                $error_message .= 'Message not long enough, please re-try with longer message.<br/>';
             }
 
             if (strlen($error_message) > 0) {
@@ -183,7 +181,7 @@
                 'X-Mailer: PHP/' . phpversion();
             @mail($email_to, $email_subject, $email_message, $headers);
 
-            echo "Thanks for reaching out, I'll get back to you as soon as possible.";
+            echo "<span class='sent-msg'>Thanks for reaching out, I'll get back to you as soon as possible.</span><br/><br/>";
         }
         ?>
         <form action="index.php#contact" method="POST">
