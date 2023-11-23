@@ -131,7 +131,7 @@
 
             function problem($error)
             {
-                echo "<span class='error-msg'>"$error . "</span><br/><br/>";
+                echo "<span class='error-msg'>" . $error . "</span><br/><br/>";
                 die();
             }
 
