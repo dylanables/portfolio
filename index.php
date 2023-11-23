@@ -170,11 +170,11 @@
                 }
 
             } else {
-                $error_message .= 'Uh oh, looks like there is something missing.';
+                $error_message .= 'Uh oh, looks like there is something missing.<br/>';
             }
         
             if (strlen($error_message) > 1) {
-                echo "<span class='error-msg'>" . $error_message . "</span><br/><br/>";
+                echo "<span class='error-msg'>" . $error_message . "</span><br/>";
             }
         }
         ?>
