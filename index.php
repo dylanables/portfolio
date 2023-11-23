@@ -129,59 +129,53 @@
             $email_to = "hello@dylanables.com";
             $email_subject = "You've got a new contact form submission";
 
-            function problem($error)
-            {
-                echo "<span class='error-msg'>" . $error . "</span><br/><br/>";
-                die();
-            }
+            $error_message = "";
 
             // validation expected data exists
-            if (
-                !isset($_POST['email']) ||
-                !isset($_POST['message'])
-            ) {
-                problem('Oh looks like there is something missing.');
+            if (isset($_POST['email']) && isset($_POST['message'])) {
+                $email = $_POST['email']; // required
+                $message = $_POST['message']; // required
+
+                $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+                if (preg_match($email_exp, $email)) {
+
+                    $string_exp = "/^[A-Za-z .'-]+$/";
+                    if (strlen($message) > 5) {
+
+                        $email_message = "Form details following:\n\n";
+
+                        function clean_string($string)
+                        {
+                            $bad = array("content-type", "bcc:", "to:", "cc:", "href");
+                            return str_replace($bad, "", $string);
+                        }
+
+                        $email_message .= "Email: " . clean_string($email) . "\n";
+                        $email_message .= "Message: " . clean_string($message) . "\n";
+
+                        // create email headers
+                        $headers = 'From: ' . $email . "\r\n" .
+                            'Reply-To: ' . $email . "\r\n" .
+                            'X-Mailer: PHP/' . phpversion();
+                        @mail($email_to, $email_subject, $email_message, $headers);
+
+                        echo "<span class='sent-msg'>Thanks for reaching out, I'll get back to you as soon as possible.</span><br/><br/>";
+
+                    } else {
+                        $error_message .= 'Message not long enough, please re-try with longer message.<br/>';
+                    }
+
+                } else {
+                    $error_message .= 'Email address is not valid, please re-try with another email.<br/>';
+                }
+
+            } else {
+                $error_message .= 'Uh oh, looks like there is something missing.';
             }
-
-            $email = $_POST['email']; // required
-            $message = $_POST['message']; // required
-
-            $error_message = "";
-            $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-            if (!preg_match($email_exp, $email)) {
-                $error_message .= 'Email address is not valid, please re-try with another email.<br/>';
+        
+            if (strlen($error_message) > 1) {
+                echo "<span class='error-msg'>" . $error_message . "</span><br/><br/>";
             }
-
-            $string_exp = "/^[A-Za-z .'-]+$/";
-
-
-            if (strlen($message) < 2) {
-                $error_message .= 'Message not long enough, please re-try with longer message.<br/>';
-            }
-
-            if (strlen($error_message) > 0) {
-                problem($error_message);
-            }
-
-            $email_message = "Form details following:\n\n";
-
-            function clean_string($string)
-            {
-                $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-                return str_replace($bad, "", $string);
-            }
-
-            $email_message .= "Email: " . clean_string($email) . "\n";
-            $email_message .= "Message: " . clean_string($message) . "\n";
-
-            // create email headers
-            $headers = 'From: ' . $email . "\r\n" .
-                'Reply-To: ' . $email . "\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-            @mail($email_to, $email_subject, $email_message, $headers);
-
-            echo "<span class='sent-msg'>Thanks for reaching out, I'll get back to you as soon as possible.</span><br/><br/>";
         }
         ?>
         <form action="index.php#contact" method="POST">

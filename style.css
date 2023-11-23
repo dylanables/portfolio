@@ -381,13 +381,13 @@ background-image: url(images/trees.png);
     width: 100%;
 }
 
-.sent-msg {
-    color: #05C811;
+.contact .sent-msg {
+    color: #52b963;
     font-weight: bold;
 }
 
-.error-msg {
-    color: #FF2700;
+.contact .error-msg {
+    color: #ff0000;
     font-weight: bold;
 }
 
