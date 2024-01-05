@@ -39,7 +39,7 @@
 
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>I'm a full-stack web developer in Seattle, WA. I'm passionate about building intuitive and elegant websites for cleints ranging from individuals to large enterprise corporations.</p>
+        <p>I'm a full-stack web developer in Seattle, WA. I'm passionate about building intuitive and elegant websites for clients ranging from individuals to large enterprise corporations.</p>
         <h2>Tech</h2>
         <ul>
             <li>HTML</li>

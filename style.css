@@ -341,6 +341,11 @@ background-image: url(images/trees.png);
     position: absolute;
 }
 
+.project-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .project-buttons {
     width: 100%;
     justify-content: center;
