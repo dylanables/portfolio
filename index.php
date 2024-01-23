@@ -44,10 +44,17 @@
         <ul>
             <li>HTML</li>
             <li>CSS</li>
+            <li>Sass</li>
+            <li>Tailwind</li>
             <li>JavaScript</li>
-            <li>React.js</li>
+            <li>React</li>
+            <li>NextJS</li>
+            <li>Node.js</li>
+            <li>Express</li>
             <li>MongoDB</li>
             <li>MySQL</li>
+            <li>Shopify</li>
+            <li>WordPress</li>
         </ul>
     </section>
 
@@ -55,7 +62,7 @@
         <h2>Projects</h2>
         <p>Have a look at the projects I've built.</p>
         <div class="projects-container">
-            <div class="project-card">
+        <div class="project-card">
                 <h3>Find Paddle</h3>
                 <div class="project-image-container">
                     <img src="images/findpaddle.jpeg" alt="FindPaddle.com" class="project-image" />
@@ -67,8 +74,43 @@
                         MongoDB<br/>
                     </div>
                 </div>
-                <p>FindPaddle.com offers multiple different tools to find the right pickleball paddle for you. 
-                This project required advanced data filtering, a unique recommendation algorithm, and a similiarity score algorithm.</p>
+                <p>
+                    FindPaddle.com provides a range of tools to help you discover the perfect pickleball paddle. 
+                    This project involved advanced data filtering, a unique recommendation algorithm, and a similarity score algorithm.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://findpaddle.com" class="project-link" target="_blank">
+                        <button class="pushable">
+                            <span class="front">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/dylanables/findpaddle" class="project-link" target="_blank">
+                        <button class="pushable">
+                            <span class="front">
+                                <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Generate Puzzles</h3>
+                <div class="project-image-container">
+                    <img src="images/findpaddle.jpeg" alt="GeneratePuzzles.com" class="project-image" />
+                    <div class="hidden">
+                        Python<br/>
+                        Flask<br/>
+                        Javascript<br/>
+                        OpenAI API<br/>
+                    </div>
+                </div>
+                <p>
+                    GeneratePuzzles.com instantly creates word search and crossword puzzles. 
+                    Utilizing OpenAI's API, users only need to enter a topic, and the website 
+                    will generate all the words and corresponding clues for the puzzle.
+                </p>
                 <div class="project-buttons">
                     <a href="https://findpaddle.com" class="project-link" target="_blank">
                         <button class="pushable">
@@ -97,7 +139,10 @@
                         PHP<br/>
                     </div>
                 </div>
-                <p>This is my personal portfolio page which features parallax scrolling, responsive (mobile-friendly) elements, and a PHP contact form.</p>
+                <p>
+                    This is my personal portfolio page, showcasing parallax scrolling, 
+                    responsive (mobile-friendly) elements, and a PHP contact form.
+                </p>
                 <div class="project-buttons">
                     <a href="https://dylanables.com" class="project-link" target="_blank">
                         <button class="pushable">
@@ -125,7 +170,6 @@
         <?php
         if (isset($_POST['email'])) {
 
-            // REPLACE THIS 2 LINES AS YOU DESIRE
             $email_to = "hello@dylanables.com";
             $email_subject = "You've got a new contact form submission";
 
