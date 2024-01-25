@@ -41,20 +41,55 @@
         <h2>About Me</h2>
         <p>I'm a full-stack web developer in Seattle, WA. I'm passionate about building intuitive and elegant websites for clients ranging from individuals to large enterprise corporations.</p>
         <h2>Tech</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Sass</li>
-            <li>Tailwind</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>NextJS</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Shopify</li>
-            <li>WordPress</li>
+        <div class="skills">
+            <div class="skill">
+                <img src="images/tech/html.png" alt="HTML" />
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/css.png" alt="CSS" />
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/tailwind.png" alt="Tailwind" />
+                <p>Tailwind</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/javascript.png" alt="JavaScript" />
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/reactjs.png" alt="ReactJS" />
+                <p>ReactJS</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/nextjs.png" alt="NextJS" />
+                <p>NextJS</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/nodejs.png" alt="Node.js" />
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/express.png" alt="Express" />
+                <p>Express</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/mongodb.png" alt="MongoDB" />
+                <p>MongoDB</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/mysql.png" alt="MySQL" />
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/shopify.png" alt="Shopify" />
+                <p>Shopify</p>
+            </div>
+            <div class="skill">
+                <img src="images/tech/wordpress.png" alt="WordPress" />
+                <p>WordPress</p>
+            </div>
         </ul>
     </section>
 
@@ -65,8 +100,8 @@
         <div class="project-card">
                 <h3>Find Paddle</h3>
                 <div class="project-image-container">
-                    <img src="images/findpaddle.jpeg" alt="FindPaddle.com" class="project-image" />
-                    <div class="hidden">
+                    <img src="images/findpaddle.jpg" alt="FindPaddle.com" class="project-image" />
+                    <div class="stack">
                         React.js<br/>
                         CSS<br/>
                         Node.js<br/>
@@ -74,7 +109,7 @@
                         MongoDB<br/>
                     </div>
                 </div>
-                <p>
+                <p class="project-desc">
                     FindPaddle.com provides a range of tools to help you discover the perfect pickleball paddle. 
                     This project involved advanced data filtering, a unique recommendation algorithm, and a similarity score algorithm.
                 </p>
@@ -98,15 +133,15 @@
             <div class="project-card">
                 <h3>Generate Puzzles</h3>
                 <div class="project-image-container">
-                    <img src="images/findpaddle.jpeg" alt="GeneratePuzzles.com" class="project-image" />
-                    <div class="hidden">
+                    <img src="images/generatepuzzles.jpg" alt="GeneratePuzzles.com" class="project-image" />
+                    <div class="stack">
                         Python<br/>
                         Flask<br/>
                         Javascript<br/>
                         OpenAI API<br/>
                     </div>
                 </div>
-                <p>
+                <p class="project-desc">
                     GeneratePuzzles.com instantly creates word search and crossword puzzles. 
                     Utilizing OpenAI's API, users only need to enter a topic, and the website 
                     will generate all the words and corresponding clues for the puzzle.
@@ -119,7 +154,7 @@
                             </span>
                         </button>
                     </a>
-                    <a href="https://github.com/dylanables/findpaddle" class="project-link" target="_blank">
+                    <a href="https://github.com/dylanables/puzzlegenerator" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
@@ -131,15 +166,15 @@
             <div class="project-card">
                 <h3>Portfolio</h3>
                 <div class="project-image-container">
-                    <img src="images/portfolio.png" alt="DylanAbles.com" class="project-image" />
-                    <div class=" hidden">
+                    <img src="images/portfolio.jpg" alt="DylanAbles.com" class="project-image" />
+                    <div class="stack">
                         HTML<br/>
                         CSS<br/>
                         JavaScript<br/>
                         PHP<br/>
                     </div>
                 </div>
-                <p>
+                <p class="project-desc">
                     This is my personal portfolio page, showcasing parallax scrolling, 
                     responsive (mobile-friendly) elements, and a PHP contact form.
                 </p>

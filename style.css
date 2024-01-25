@@ -6,13 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     background-color: #fff;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -258,21 +258,40 @@ background-image: url(images/trees.png);
 .about {
     position: relative;
     background: #254F69;
-    padding: 100px;
+    padding: 50px;
     text-align: justify;
 }
 
 .about h2 {
     font-size: 3em;
     color: #fff;
-    margin-bottom: 10px;
+    margin: 30px 0px;
 }
 
-.about p,
-.about li {
-    font: 1em;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.skill img {
+    height: 50px;
+    width: 50px;
+}
+
+.about p {
+    font-size: 1em;
     color: #fff;
     font-weight: 300;
+}
+
+.about .skill p {
+    font-size: 0.75em;
+    color: #fff;
+    font-weight: 100;
 }
 
 .projects {
@@ -281,7 +300,6 @@ background-image: url(images/trees.png);
     padding: 100px;
     color: #254F69;
     background-color: #f9f9f9;
-
 }
 
 .projects h2 {
@@ -292,13 +310,17 @@ background-image: url(images/trees.png);
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px ;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: auto;
+    align-items: stretch;
 }
 
 .project-card {
-    width: 300px;
+    position:relative;
     display: flex;
     flex-direction: column;
+    width: 350px;
     gap: 10px;
     margin-bottom: 50px;
     padding: 25px;
@@ -319,13 +341,16 @@ background-image: url(images/trees.png);
 }
 
 .project-image-container:hover {
-    .hidden {
+    .stack {
         z-index: 2;
         background-color: #000;
         color: #fff;
         opacity: 75%;
         text-align: center;
         padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -341,15 +366,12 @@ background-image: url(images/trees.png);
     position: absolute;
 }
 
-.project-info-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 .project-buttons {
     width: 100%;
-    justify-content: center;
-    align-items: center
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
 }
 
 .project-link {
