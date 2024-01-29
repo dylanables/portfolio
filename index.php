@@ -147,7 +147,7 @@
                     will generate all the words and corresponding clues for the puzzle.
                 </p>
                 <div class="project-buttons">
-                    <a href="https://findpaddle.com" class="project-link" target="_blank">
+                    <a href="https://generatepuzzles.com" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
