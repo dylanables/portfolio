@@ -8,6 +8,9 @@ let about = document.getElementById('about');
 let projects = document.getElementById('projects');
 let contact = document.getElementById('contact');
 
+let mouseContainer = document.getElementById('mouse-container');
+let mouse = document.getElementById('mouse-container');
+
 let aboutLink = document.getElementById('about-link');
 let projectsLink = document.getElementById('projects-link');
 let contactLink = document.getElementById('contact-link');
@@ -16,6 +19,7 @@ const [red, green, blue] = [19, 28, 52];
 const bg = document.querySelector('.parallax');
 
 window.addEventListener('scroll', () => {
+    fadeOutOnScroll(mouseContainer);
     let value = window.scrollY;
 
     text.style.marginTop = Math.min(value * 1.5, about.offsetTop) + 'px';
@@ -52,3 +56,23 @@ window.addEventListener('scroll', () => {
     }
 
 })
+
+function fadeOutOnScroll(element) {
+    if (!element) {
+      return;
+    }
+    
+    var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+    var elementHeight = element.offsetHeight;
+    var scrollTop = document.documentElement.scrollTop;
+    
+    var opacity = 1;
+    
+    if (scrollTop > distanceToTop) {
+      opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+    }
+    
+    if (opacity >= 0) {
+      element.style.opacity = opacity;
+    }
+  }

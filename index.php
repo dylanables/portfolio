@@ -35,11 +35,15 @@
         <h2 id="text">Hi, I'm Dylan.</h2>
         <div class="parallax_layer" id="mountain1"></div>
         <div class="parallax_layer" id="trees"></div>
+
+        <div class="mouse-container" id="mouse-container">
+            <a href="#about"><div class="mouse" id="mouse"></div></a>
+        </div>
     </section>
 
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>I'm a full-stack web developer in Seattle, WA. I'm passionate about building intuitive and elegant websites for clients ranging from individuals to large enterprise corporations.</p>
+        <p>I'm a full-stack web developer in Seattle, WA. Check out my projects below or use the contact form to get in touch!</p>
         <h2>Tech</h2>
         <div class="skills">
             <div class="skill">
