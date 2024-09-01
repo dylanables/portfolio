@@ -106,16 +106,16 @@
                 <div class="project-image-container">
                     <img src="images/findpaddle.jpg" alt="FindPaddle.com" class="project-image" />
                     <div class="stack">
-                        React.js<br/>
-                        CSS<br/>
-                        Node.js<br/>
-                        Express<br/>
-                        MongoDB<br/>
+                        Next.js<br/>
+                        TypeScript<br/>
+                        Tailwind CSS<br/>
+                        Prisma ORM<br/>
+                        SQLite<br/>
                     </div>
                 </div>
                 <p class="project-desc">
                     FindPaddle.com provides a range of tools to help you discover the perfect pickleball paddle. 
-                    This project involved advanced data filtering, a unique recommendation algorithm, and a similarity score algorithm.
+                    This project involved advanced data filtering, a unique recommendation algorithm, and a web scraping.
                 </p>
                 <div class="project-buttons">
                     <a href="https://findpaddle.com" class="project-link" target="_blank">
@@ -139,16 +139,13 @@
                 <div class="project-image-container">
                     <img src="images/generatepuzzles.jpg" alt="GeneratePuzzles.com" class="project-image" />
                     <div class="stack">
-                        Python<br/>
-                        Flask<br/>
                         Javascript<br/>
                         OpenAI API<br/>
                     </div>
                 </div>
                 <p class="project-desc">
                     GeneratePuzzles.com instantly creates word search and crossword puzzles. 
-                    Utilizing OpenAI's API, users only need to enter a topic, and the website 
-                    will generate all the words and corresponding clues for the puzzle.
+                    Utilizing OpenAI's API, users can enter any topic and the website will generate all the words and corresponding clues for the puzzle.
                 </p>
                 <div class="project-buttons">
                     <a href="https://generatepuzzles.com" class="project-link" target="_blank">
@@ -158,7 +155,7 @@
                             </span>
                         </button>
                     </a>
-                    <a href="https://github.com/dylanables/puzzlegenerator" class="project-link" target="_blank">
+                    <a href="https://github.com/dylanables/generatepuzzles" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
