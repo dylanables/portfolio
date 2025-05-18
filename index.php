@@ -151,14 +151,14 @@
                     SurvivorStats.com analyzes data related to the hit show Survivor and showcases various statistics and visualizations.
                 </p>
                 <div class="project-buttons">
-                    <a href="https://dylanables.com" class="project-link" target="_blank">
+                    <a href="https://survivorstats.com" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
                             </span>
                         </button>
                     </a>
-                    <a href="https://github.com/dylanables/portfolio" class="project-link" target="_blank">
+                    <a href="https://github.com/dylanables/survivorstats" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
