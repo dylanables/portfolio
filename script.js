@@ -69,7 +69,7 @@ function fadeOutOnScroll(element) {
     var opacity = 1;
     
     if (scrollTop > distanceToTop) {
-      opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+      opacity = 1 - (scrollTop - distanceToTop) / (elementHeight * 0.5);
     }
     
     if (opacity >= 0) {
