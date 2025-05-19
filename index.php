@@ -75,7 +75,7 @@
                 <p>R</p>
             </div>
             <div class="skill">
-                <img src="images/tech/java.png" alt="Java" />
+                <img src="images/tech/java.webp" alt="Java" />
                 <p>Java</p>
             </div>
             <div class="skill">
