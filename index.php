@@ -51,6 +51,10 @@
                 <p>JavaScript</p>
             </div>
             <div class="skill">
+                <img src="images/tech/typescript.png" alt="TypeScript" />
+                <p>TypeScript</p>
+            </div>
+            <div class="skill">
                 <img src="images/tech/reactjs.png" alt="ReactJS" />
                 <p>ReactJS</p>
             </div>
@@ -59,8 +63,8 @@
                 <p>NextJS</p>
             </div>
             <div class="skill">
-                <img src="images/tech/nodejs.png" alt="Node.js" />
-                <p>Node.js</p>
+                <img src="images/tech/git.png" alt="Git" />
+                <p>Git</p>
             </div>
             <div class="skill">
                 <img src="images/tech/sql.png" alt="SQL" />
@@ -71,12 +75,8 @@
                 <p>Python</p>
             </div>
             <div class="skill">
-                <img src="images/tech/r.png" alt="R" />
-                <p>R</p>
-            </div>
-            <div class="skill">
-                <img src="images/tech/java.webp" alt="Java" />
-                <p>Java</p>
+                <img src="images/tech/tableau.png" alt="Tableau" />
+                <p>Tableau</p>
             </div>
             <div class="skill">
                 <img src="images/tech/excel.png" alt="Excel" />
