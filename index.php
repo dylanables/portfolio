@@ -43,21 +43,9 @@
 
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>I'm a full-stack web developer in Seattle, WA. Check out my projects below or use the contact form to get in touch!</p>
+        <p>Hi, I&apos;m Dylan Ables! I enjoy building digital projects that combine thoughtful design, interactivity, and data. My work spans a range of tools and technologies (see below), and I'm always looking for ways to make ideas more engaging, functional, and insightful. Check out my projects below or use the contact form to get in touch!</p>
         <h2>Tech</h2>
         <div class="skills">
-            <div class="skill">
-                <img src="images/tech/html.png" alt="HTML" />
-                <p>HTML</p>
-            </div>
-            <div class="skill">
-                <img src="images/tech/css.png" alt="CSS" />
-                <p>CSS</p>
-            </div>
-            <div class="skill">
-                <img src="images/tech/tailwind.png" alt="Tailwind" />
-                <p>Tailwind</p>
-            </div>
             <div class="skill">
                 <img src="images/tech/javascript.png" alt="JavaScript" />
                 <p>JavaScript</p>
@@ -75,31 +63,30 @@
                 <p>Node.js</p>
             </div>
             <div class="skill">
-                <img src="images/tech/express.png" alt="Express" />
-                <p>Express</p>
+                <img src="images/tech/sql.png" alt="SQL" />
+                <p>SQL</p>
             </div>
             <div class="skill">
-                <img src="images/tech/mongodb.png" alt="MongoDB" />
-                <p>MongoDB</p>
+                <img src="images/tech/python.png" alt="Python" />
+                <p>Python</p>
             </div>
             <div class="skill">
-                <img src="images/tech/mysql.png" alt="MySQL" />
-                <p>MySQL</p>
+                <img src="images/tech/r.png" alt="R" />
+                <p>R</p>
             </div>
             <div class="skill">
-                <img src="images/tech/shopify.png" alt="Shopify" />
-                <p>Shopify</p>
+                <img src="images/tech/java.png" alt="Java" />
+                <p>Java</p>
             </div>
             <div class="skill">
-                <img src="images/tech/wordpress.png" alt="WordPress" />
-                <p>WordPress</p>
+                <img src="images/tech/excel.png" alt="Excel" />
+                <p>Excel</p>
             </div>
         </ul>
     </section>
 
     <section class="projects" id="projects">
         <h2>Projects</h2>
-        <p>Have a look at the projects I've built.</p>
         <div class="projects-container">
         <div class="project-card">
                 <h3>Find Paddle</h3>
