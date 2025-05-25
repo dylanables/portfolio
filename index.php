@@ -8,6 +8,17 @@
     <title>Dylan Ables Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/76f7bb6a7c.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+<link rel="icon" href="images/assets/favicon.ico" type="image/x-icon">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="images/assets/apple-touch-icon.png">
+
+<!-- PNG Favicons -->
+<link rel="icon" type="image/png" sizes="192x192" href="images/assets/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/assets/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-32x32.png">
 </head>
 
 <body>
@@ -63,16 +74,16 @@
                 <p>NextJS</p>
             </div>
             <div class="skill">
+                <img src="images/tech/python.png" alt="Python" />
+                <p>Python</p>
+            </div>
+            <div class="skill">
                 <img src="images/tech/git.png" alt="Git" />
                 <p>Git</p>
             </div>
             <div class="skill">
                 <img src="images/tech/sql.png" alt="SQL" />
                 <p>SQL</p>
-            </div>
-            <div class="skill">
-                <img src="images/tech/python.png" alt="Python" />
-                <p>Python</p>
             </div>
             <div class="skill">
                 <img src="images/tech/tableau.png" alt="Tableau" />
@@ -97,12 +108,12 @@
                         TypeScript<br/>
                         Tailwind CSS<br/>
                         Prisma ORM<br/>
-                        SQLite<br/>
+                        PostgreSQL<br/>
                     </div>
                 </div>
                 <p class="project-desc">
-                    FindPaddle.com provides a range of tools to help you discover the perfect pickleball paddle. 
-                    This project involved advanced data filtering, a unique recommendation algorithm, and a web scraping.
+                    FindPaddle.com is a platform designed to help users discover the perfect pickleball paddle. 
+                    This project features advanced data filtering, a custom recommendation algorithm, and automated web scraping to keep product data up to date.
                 </p>
                 <div class="project-buttons">
                     <a href="https://findpaddle.com" class="project-link" target="_blank">
@@ -112,7 +123,7 @@
                             </span>
                         </button>
                     </a>
-                    <a href="https://github.com/dylanables/findpaddle" class="project-link" target="_blank">
+                    <a href="https://github.com/dylanables/fp" class="project-link" target="_blank">
                         <button class="pushable">
                             <span class="front">
                                 <i class="fa-brands fa-github" style="color: #ffffff;"></i> Github
@@ -135,7 +146,8 @@
                     </div>
                 </div>
                 <p class="project-desc">
-                    SurvivorStats.com analyzes data related to the hit show Survivor and showcases various statistics and visualizations.
+                    SurvivorStats.com is an interactive site that analyzes data from the hit show Survivor. 
+                    It showcases trends, statistics, and visualizations to explore gameplay patterns, contestant performance, and season dynamics.
                 </p>
                 <div class="project-buttons">
                     <a href="https://survivorstats.com" class="project-link" target="_blank">
@@ -165,8 +177,9 @@
                     </div>
                 </div>
                 <p class="project-desc">
-                    GeneratePuzzles.com instantly creates word search and crossword puzzles. 
-                    Utilizing OpenAI's API, users can enter any topic and the website will generate all the words and corresponding clues for the puzzle.
+                    GeneratePuzzles.com is a puzzle generator that instantly creates word search and crossword puzzles. 
+                    Utilizing OpenAI's API, users can enter any topic and the site will generate relevant words and clues to build unique puzzles.
+                    JavaScript powers the interactive gameplay, enabling smooth puzzle solving directly in the browser.
                 </p>
                 <div class="project-buttons">
                     <a href="https://generatepuzzles.com" class="project-link" target="_blank">
